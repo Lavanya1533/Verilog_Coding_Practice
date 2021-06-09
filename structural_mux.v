@@ -1,3 +1,5 @@
+//2:1 Mux using structural modeling
+
 module structural_mux(input a, b, sel, output Y);
   wire and1, and2, not1;
 
