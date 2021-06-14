@@ -1,13 +1,13 @@
 
-module mux(sel, IN, OUT);
+module mux_logic(sel, in, out);
   input [1:0] sel;
-  input [3:0] IN;
-  output OUT;
+  input [3:0] in;
+  output out;
 
 //Continuous assignment using logical operators
 
-  assign OUT = ((!sel[1] && !sel[0] && IN[0]) ||
-                (!sel[1] && sel[0] && IN[1]) ||
-                (sel[1] && !sel[0] && IN[2]) ||
-                (sel[1] && sel[0] && IN[3]));
+  assign out = ((!sel[1] && !sel[0] && in[0]) ||
+                (!sel[1] && sel[0] && in[1]) ||
+                (sel[1] && !sel[0] && in[2]) ||
+                (sel[1] && sel[0] && in[3]));
 endmodule
