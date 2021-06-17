@@ -2,7 +2,6 @@
 
 module osci();
 	reg oscillate;
-	
 	initial
 	begin
 		oscillate = 1'b0;
